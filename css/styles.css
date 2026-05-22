@@ -167,18 +167,17 @@ nav {
     background: var(--text-color-wh);
     color: var(--text-color-blu);
     text-align: center;
-    padding-block: 2rem;
-    padding-inline: 4rem;
 }
 
 .what_we_do h2 {
     font-size: clamp(2rem, 3vw, 1.25rem);
-    margin-block: 2rem;
+    padding-block: 2rem;
 }
 
 .what_we_do p {
     margin-bottom: 2rem;
-    
+    padding-inline: 2rem;
+
 
 }
 
@@ -190,9 +189,86 @@ nav {
     padding-block: 2rem;
 }
 
+.grid-item {
+    padding: 1rem;
+}
+
 .grid-item img {
     display: inline-block;
     margin-bottom: 2rem;
 }
 
+.products h3 {
+    margin-bottom: 1rem;
+}
+
+.poly {
+    padding: 1rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.poly img {
+    display: block;
+    /* margin-bottom: 2rem; */
+    width: 100%;
+    height: auto;
+}
+span{
+    text-align: center;
+    /* font-size: .75rem; */
+}
+.overlay-grid {
+    /* max-width: 40px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, .6); */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    /*hidden by default*/
+}
+
+.overlay-grid h3 p{
+    padding: 0;
+}
+
+.poly:hover .overlay-grid {
+    opacity: 1;
+    /* show overlay on hover */
+}
+
 /***** End What we do *****/
+
+/***** our_results Section *****/
+.our_results {
+    background: url("/images/part_3_dark.png") no-repeat center center/cover;
+    /* min-height: 100vh; */
+}
+
+.our_results_content h2 {
+    font-size: clamp(2rem, 3vw, 1.25rem);
+    padding-block: 2rem;
+    text-align: center;
+}
+
+.our_results_content p {
+    margin-block: 2rem;
+}
+
+/***** End our_results Section *****/
+
+/***** Contact us Section *****/
+.contact_us {
+    background: var(--text-color-wh);
+    color: var(--text-color-blu);
+}
+
+/***** End Contact us Section *****/
