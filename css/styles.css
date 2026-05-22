@@ -25,19 +25,31 @@ html {
 body {
     font-family: "Source Code Pro";
     color: var(--text-color-wh);
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: #071629;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
+    max-width: 100%;
+    /* width: ; */
+    margin-inline: 4rem;
 }
 
 header {
     background: url("/images/background.png") no-repeat center center/cover;
-    max-width: 100%;
     min-height: 100vh;
+    width: auto;
+    padding-top: 2rem;
 }
 
 li,
@@ -65,3 +77,73 @@ button:hover {
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, .5);
 
 }
+
+/* reset display logo image */
+#logo-container img {
+    display: inline;
+}
+
+#logo-container .fa-solid {
+    display: none;
+}
+
+/***** header Section *****/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+    /* padding-right: 3rem; */
+    /* margin-right: auto; */
+
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    /* width: 100%; */
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 5vw, 1.5rem);
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+    font-family: 1.25rem;
+}
+
+/* #text{
+    margin-bottom: 1rem;
+    margin: 0 2rem;
+} */
+
+.hero button {
+    margin-bottom: 3rem;
+
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 580px) {
+    #logo-container .fa-solid {
+        display: inline-block;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+/***** End header Section *****/
