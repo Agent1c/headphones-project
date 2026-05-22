@@ -27,7 +27,7 @@ body {
     color: var(--text-color-wh);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     width: auto;
     background-color: #071629;
@@ -48,7 +48,7 @@ img {
 header {
     background: url("/images/background.png") no-repeat center center/cover;
     min-height: 100vh;
-    width: auto;
+    /* width: auto; */
     padding-top: 2rem;
 }
 
@@ -76,6 +76,12 @@ button:hover {
     background: #d44b4b;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, .5);
 
+}
+
+p {
+    max-width: 45rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* reset display logo image */
@@ -107,7 +113,7 @@ nav {
 
 .navbar a:hover,
 .navbara:focus {
-    transition:  all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     color: var(--btn-color);
 }
 
@@ -155,3 +161,38 @@ nav {
 }
 
 /***** End header Section *****/
+
+/***** What we do *****/
+.what_we_do {
+    background: var(--text-color-wh);
+    color: var(--text-color-blu);
+    text-align: center;
+    padding-block: 2rem;
+    padding-inline: 4rem;
+}
+
+.what_we_do h2 {
+    font-size: clamp(2rem, 3vw, 1.25rem);
+    margin-block: 2rem;
+}
+
+.what_we_do p {
+    margin-bottom: 2rem;
+    
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(12.5rem, 100%), 1fr));
+    gap: 2rem;
+    place-items: center;
+    padding-block: 2rem;
+}
+
+.grid-item img {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+/***** End What we do *****/
