@@ -27,7 +27,7 @@ body {
     color: var(--text-color-wh);
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    min-height: 100vh;
     justify-content: center;
     width: auto;
     background-color: #071629;
@@ -158,6 +158,16 @@ nav {
     .navbar {
         display: none;
     }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: .8rem;
+    }
+
+    .footer-cred{
+        padding-top: 1rem;
+    }
 }
 
 /***** End header Section *****/
@@ -272,6 +282,7 @@ span {
     background: var(--text-color-wh);
     color: var(--text-color-blu);
     text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 .contact_us h3 {
@@ -284,41 +295,61 @@ span {
 }
 
 .contactForm {
-  max-width: 32.25rem;        /* controls overall width */
-  margin: 0 auto;          /* centers the form horizontally */
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;               /* spacing between fields */
+    max-width: 32.25rem;
+    /* controls overall width */
+    margin: 0 auto;
+    /* centers the form horizontally */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* spacing between fields */
 }
 
 .form-tags {
-  display: flex;
-  align-items: center;
-  background: #f5f5f5;     /* light background for inputs */
-  border-radius: 6px;
-  padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    /* light background for inputs */
+    border-radius: 6px;
+    padding: 10px;
 }
 
 .form-tags i {
-  margin-right: 10px;
-  color: #555;
+    margin-right: 10px;
+    color: #555;
 }
 
 .form-tags input,
 .form-tags textarea {
-  flex: 1;                 /* makes input take full width */
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 16px;
+    flex: 1;
+    /* makes input take full width */
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
 }
 
 textarea {
-  resize: none;            /* prevents awkward resizing */
-  min-height: 100px;
+    resize: none;
+    /* prevents awkward resizing */
+    min-height: 100px;
 }
 
-
-
 /***** End Contact us Section *****/
+
+/***** Footer Section *****/
+footer{
+    padding: 2rem 0;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+.footer-item a:hover{
+    color: #FF6565;
+    /* transform: transition .3s ease; */
+}
+/***** End Footer Section *****/
