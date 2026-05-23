@@ -48,7 +48,7 @@ img {
 header {
     background: url("/images/background.png") no-repeat center center/cover;
     min-height: 100vh;
-    /* width: auto; */
+
     padding-top: 2rem;
 }
 
